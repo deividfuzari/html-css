@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <style>
+        /*          EM CSS SELETORES PERSONALIZADOS.
+            #   =   id
+            .   =   class
+            :   =   pseudo-class
+            ::  =   pseudo-element
+            >   =   clildren filho
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        a{
+            color: rgb(61, 61, 173);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(98, 27, 165);
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial::after{
+            content: '  \261A';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+
+        }
+        a::before{
+            content: '\2794  ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://twitter.com/DeividFuzari" target="_blank">Meu Twitter</a></li>
+        <li><a href="https://www.instagram.com/deivid_fuzari/" target="_blank">Meu Instagram</a></li>
+        <li><a href="https://liquipedia.net/valorant/Fuzari" target="_blank" class="especial">Meu liquipedia</a></li>
+    </ul>
+    
+</body>
+</html>
