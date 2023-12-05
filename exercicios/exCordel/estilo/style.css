@@ -1,13 +1,25 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 body {
     min-height: 100vh; /* 100% da viewl height ALTURA, Poderia ser VW*/
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +31,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /*para deixar bonito mas nao em capslock/*para colocar em maiscula text-transform:uppercase*/
+    font-family: var(--fonte2);
+    font-size: 8vw;
 }
 
 header > p{
@@ -41,6 +55,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em; /*para ficar melhor a leitura do peoma*/
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3vw; /*basicamente ao inves de usar EM usaremos VW viewlwidht usaremos a porcentagem que vai pegar do tamanho da tela que estiver, basicamente se estiver grande ou pequeno iremos enchergar bem.*/
 }
 
 section.normal {
@@ -55,8 +71,10 @@ section.imagem {
 }
 
 section.imagem > p {
+    display: inline-block; /*motivo disso pois as palavras nao estavam se encaixando na largura anterior ai com inline-block ele se adapta ao conteudo da caixa.*/
     background-color: rgba(0, 0, 0, 0.288);
-    width: 400px
+    padding: 5px;
+    
 }
 
 footer{
