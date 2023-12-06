@@ -59,6 +59,22 @@ section {
     font-size: 3vw; /*basicamente ao inves de usar EM usaremos VW viewlwidht usaremos a porcentagem que vai pegar do tamanho da tela que estiver, basicamente se estiver grande ou pequeno iremos enchergar bem.*/
 }
 
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -67,14 +83,16 @@ section.normal {
 section.imagem {
     background-color: rgba(44, 44, 44, 0.568);
     color: white;
-    
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.582);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block; /*motivo disso pois as palavras nao estavam se encaixando na largura anterior ai com inline-block ele se adapta ao conteudo da caixa.*/
-    background-color: rgba(0, 0, 0, 0.288);
+    background-color: rgba(0, 0, 0, 0.541);
     padding: 5px;
-    
+    text-shadow: 1px 1px 0px black;
 }
 
 footer{
