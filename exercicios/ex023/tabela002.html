@@ -14,6 +14,14 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
+
         td,th {
             border: 1px solid black;
             padding: 8px;
@@ -36,6 +44,7 @@
     <!--
         ANATOMINA PARA TABELAS GRANDES
         TABLE
+            CAPTION -> NAO TEM TR TD OU TH É APENAS O TITULO DA SUA TABELA.
             THEAD
                 TR, TD, TH
             TBODY
@@ -44,10 +53,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Populações das Unidades Federais</caption>
         <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>População</th>
+                <th scope="col">Unidade Federativa</th>        <!--importante scope nos th de titulo sendo coluna ou na linha.-->
+                <th scope="col" style="width: 50px;">População</th> 
             </tr>
         </thead>
         <tbody>
@@ -76,7 +86,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="num"><strong>106.590.486</strong></td>
             </tr>
 
