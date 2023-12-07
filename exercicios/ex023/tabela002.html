@@ -12,6 +12,7 @@
         table{
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -19,6 +20,16 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd) { /*ou usar even que é as linhas pares*/
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
 
         }
 
@@ -81,6 +92,64 @@
                 <td>Paraná</td>
                 <td class="num">11 444 380</td>
             </tr>
+            <td>São Paulo</td> 
+            <td class="num">44 411 238</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">20 538 718</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">16 054 524</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num">14 141 626</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="num">11 444 380</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td> 
+            <td class="num">44 411 238</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">20 538 718</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">16 054 524</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num">14 141 626</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="num">11 444 380</td>
+        </tr>
+        <td>São Paulo</td> 
+        <td class="num">44 411 238</td>
+    </tr>
+    <tr>
+        <td>Minas Gerais</td>
+        <td class="num">20 538 718</td>
+    </tr>
+    <tr>
+        <td>Rio de Janeiro</td>
+        <td class="num">16 054 524</td>
+    </tr>
+    <tr>
+        <td>Bahia</td>
+        <td class="num">14 141 626</td>
+    </tr>
+    <tr>
+        <td>Paraná</td>
+        <td class="num">11 444 380</td>
+    </tr>
 
 
         </tbody>
